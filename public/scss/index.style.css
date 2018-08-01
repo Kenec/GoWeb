@@ -1,0 +1,169 @@
+.nav-background {
+  background-color: #CC45EE;
+  animation-direction: normal;
+  animation-duration: 0.7s;
+}
+
+.site_footer {
+  background-color: rgb(143, 114, 151)
+}
+
+.parallax-container {
+  min-height: 400px;
+  line-height: 0px;
+  height: auto;
+  color: rgba(255,255,255,.9);
+}
+.pad-2 {
+  padding: 10px;
+}
+.parallax-container .section {
+  width: 100%
+}
+
+.bg-text {
+  text-transform: uppercase;
+  font-family: 'Roboto Condensed', sans-serif!important;
+  font-size: 40px;
+  padding: 10% 5% 0 10%;
+  line-height: 60px;
+  text-shadow: 1px 1px 1px #000;
+  font-weight: bold;
+  color: white;
+}
+
+.medium-text {
+  text-transform: uppercase;
+  font-family: 'Roboto Condensed', sans-serif!important;
+  font-size: 25px;
+  padding: 5% 5% 0 5%;
+  line-height: 60px;
+  text-shadow: 1px 1px 1px #000;
+  color: white;
+}
+.btn:hover {
+  animation: shake 0.82s cubic-bezier(.36,.07,.19,.97) both;
+  transform: translate3d(0, 0, 0);
+  backface-visibility: hidden;
+  perspective: 1000px;
+}
+
+@keyframes shake {
+  10%, 90% {
+    transform: translate3d(-1px, 0, 0);
+  }
+  
+  20%, 80% {
+    transform: translate3d(2px, 0, 0);
+  }
+
+  30%, 50%, 70% {
+    transform: translate3d(-4px, 0, 0);
+  }
+
+  40%, 60% {
+    transform: translate3d(4px, 0, 0);
+  }
+}
+
+@media only screen and (max-width: 296px) {
+  h2 {
+    font-size: 30px
+  }
+  h3 {
+    font-size: 25px
+  }
+  btn {
+    height: 30px;
+    line-height: 30px;
+  }
+  #logo-container {
+    font-size: 18px;
+  }
+
+  .bg-text {
+    font-size: 20px;
+    padding: 10% 10% 0 10%;
+    line-height: 30px;
+  }
+
+  .medium-text {
+    font-size: 15px;
+    padding: 5% 5% 0 5%;
+    line-height: 30px;
+  }
+}
+
+@media screen
+and (min-width: 0px)
+and (max-width: 324px) {
+  #logo-container {
+    font-size: 10px !important;
+  }
+  .medium-text {
+    font-size: 15px;
+    padding: 5% 5% 0 5%;
+    line-height: 30px;
+  }
+}
+
+@media screen 
+and (min-width: 324px)
+and (max-width: 454px) {
+  #index-banner .section {
+    top: 0;
+  }
+
+  h2 {
+    font-size: 35px
+  }
+  h3 {
+    font-size: 25px
+  }
+  btn {
+    height: 20px;
+    line-height: 20px;
+  }
+  #logo-container {
+    font-size: 20px !important;
+  }
+
+  .bg-text {
+    font-size: 25px !important;
+    padding: 5% 5% 0 10%;
+    line-height: 40px;
+  }
+
+  .medium-text {
+    font-size: 20px !important;
+    padding: 5% 5% 0 5%;
+    line-height: 30px;
+  }
+}
+
+@media screen
+and (min-width: 454px) 
+and (max-width: 992px) {
+  .parallax-container .section {
+    position: absolute;
+    top: 40%;
+  }
+  #index-banner .section {
+    top: 10%;
+  }
+
+  #logo-container {
+    font-size: 18px;
+  }
+  .bg-text {
+    font-size: 25px !important;
+    padding: 5% 5% 0 10%;
+    line-height: 40px;
+  }
+  .medium-text {
+    font-size: 15px !important;
+    padding: 5% 5% 0 5%;
+    line-height: 30px;
+  }
+}
+
