@@ -6,6 +6,7 @@ import (
 	"log"
 	"os"
 	"io/ioutil"
+	"GoWeb/src/main/viewModel"
 )
 
 func main() {
@@ -13,8 +14,16 @@ func main() {
 	http.HandleFunc("/", func(writer http.ResponseWriter, request *http.Request) {
 		requestedFile := request.URL.Path[1:]
 		t := templates[requestedFile + ".html"]
+		context := viewModel.NewBase()
+		//var context interface{}
+		//switch requestedFile {
+		//case "base":
+		//	context = viewModel.NewBase()
+		//default:
+		//	context = viewModel.NewInfo()
+		//}
 		if t != nil {
-			err := t.Execute(writer, nil)
+			err := t.Execute(writer, context)
 			if err != nil {
 				log.Println(err)
 			}
