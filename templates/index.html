@@ -11,27 +11,7 @@
 </head>
 
 <body>
-    <nav class="whitesmoke nav-background" role="navigation">
-        <div class="nav-wrapper container">
-          <a id="logo-container" href="#!" class="brand-logo"><b>C</b>omely<b class=""> C</b>oncept</a>
-          <ul class="right hide-on-med-and-down">
-            <li><a href="">Home</a></li>
-            <li><a href="">Sign in</a></li>
-            <li><a href="">Register</a></li>
-            <li><a href="">About</a></li>
-            <li><a href="">Contact</a></li>
-          </ul>
-          <ul class="side-nav" id="mobile-demo">
-            <li><a href="">Home</a></li>
-            <li><a href="">Sign in</a></li>
-            <li><a href="">Register</a></li>
-            <li><a href="">About</a></li>
-            <li><a href="">Contact</a></li>
-          </ul>
-          <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
-        </div>
-      </nav>
-      
+  {{template "_header.html"}}
       <div id="index-banner" class="parallax-container">
         <div class="section no-pad-bot">
           <div class="container">
@@ -96,35 +76,7 @@
         </div>
         <div class="parallax"><img src="image/children.jpg" alt="Unsplashed background img 3"></div>
       </div>
-    
-      <footer class="page-footer site_footer">
-        <div class="container">
-          <div class="row">
-            <div class="col l6 s12">
-              <h5 class="white-text">Comely Concept Ent.</h5>
-              <p class="grey-text text-lighten-4">
-                No 1B Ogechukwu Street, Awka, Anambra State
-              </p>
-    
-    
-            </div>
-            
-            <div class="col l3 s12">
-              <h5 class="white-text">Connect</h5>
-              <ul>
-                <li><a class="white-text" href="#!">facebook</a></li>
-                <li><a class="white-text" href="#!">twiiter</a></li>
-                <li><a class="white-text" href="#!">instagram</a></li>
-              </ul>
-            </div>
-          </div>
-        </div>
-        <div class="footer-copyright">
-          <div class="container">
-          Designed by <a class="brown-text text-lighten-3" href="">BitsCode - Nig</a>
-          </div>
-        </div>
-      </footer>
+    {{template "_footer.html"}}
 </body>
 <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
